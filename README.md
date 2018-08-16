@@ -19,7 +19,7 @@ trig_expand command is used to simplify the expressions <br />
 the problem is reduced to two ODE's:  <br />
 
                 ϕt = f1(ϕ,η)
-                η_t> = f2(ϕ,η)
+                ηt = f2(ϕ,η)
 
 Corrector-predictor method is used to solve these equations <br />
 ipynb extension is SageMath file for symbolic calculations <br />
