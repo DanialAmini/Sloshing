@@ -18,8 +18,8 @@ sinh and cosh functions are expanded with Taylor series <br />
 trig_expand command is used to simplify the expressions <br />
 the problem is reduced to two ODE's:  <br />
 
-                ϕ<sup>t</sup> = f1(ϕ,η)
-                η<sup>t</sup> = f2(ϕ,η)
+                ϕt = f1(ϕ,η)
+                η_t> = f2(ϕ,η)
 
 Corrector-predictor method is used to solve these equations <br />
 ipynb extension is SageMath file for symbolic calculations <br />
