@@ -1,13 +1,13 @@
 # Sloshing-Finite-Difference
 
 2D sloshing of inviscid fluid in simple rectangular tanker <br />
-Independent variables are _x, t_ <br />
-_ϕ_ (potential function) and _η_ (surface elevation) are written with Fourier series in terms of x (space coordinate) with 5 terms: <br />
+Independent variables are `x`, `t` <br />
+`ϕ` (potential function) and `η` (surface elevation) are written with Fourier series in terms of `x` (space coordinate) with 5 terms: <br />
 
                 η=Σ(b(j,n)*cos jx,j=1..5)
                 ϕ=Σ(a(j,n)*cos jx*(cosh jz+tanh jh sinh jz),j=1..5)
                 
-_n_ is counter for time, _j_ is counter for space.  <br />
+`n` is counter for time, `j` is counter for space.  <br />
 for time, we use finite difference variables <br />
 substitute in dynamic and kinematic free surface boundary conditions: <br />
 
@@ -22,4 +22,14 @@ the problem is reduced to two ODE's:  <br />
                 ηt = f2(ϕ,η)
 
 Corrector-predictor method is used to solve these equations <br />
+The variables to be solved are essentially `A` and `B` where `A=[a0 a1 a2 a3 a4 a5]` and `B=[b1 b2 b3 b4 b5]`  
 ipynb extension is SageMath file for symbolic calculations <br />
+
+List of works done:
+- [x] Get coefficients up to 6th order (symbolic)
+- [ ] Solve the equations for `A`
+- [ ] Implement numerical code, predictor-corrector
+- [ ] Solve benchmark question
+- [ ] Discuss symmetric and asymmetric waves
+- [ ] Try higher orders
+
