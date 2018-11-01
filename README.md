@@ -28,7 +28,7 @@ ipynb extension is SageMath file for symbolic calculations <br />
 The code is written in Julia. Julia is a numerical calculation software which can be easily downloaded (50 MB approximately). The code is then copied into the installation directory and called from within Julia. Values of coefficients `a` and `b` should be written in the `.jl` file and the results are stored in text files.
 
 List of works done and future wishlist:
-- [x] Get coefficients up to 6th order (symbolic)
+
 - [x] Implement numerical code, predictor-corrector
 - [x] Solve benchmark question
 - [ ] Add horizontally forced sloshing
