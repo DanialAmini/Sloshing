@@ -25,11 +25,14 @@ Corrector-predictor method is used to solve these equations <br />
 The variables to be solved are essentially `A` and `B` where `A=[a0 a1 a2 a3 a4 a5]` and `B=[b1 b2 b3 b4 b5]`  
 ipynb extension is SageMath file for symbolic calculations <br />
 
-List of works done:
+The code is written in Julia. Julia is a numerical calculation software which can be easily downloaded (50 MB approximately). The code is then copied into the installation directory and called from within Julia. Values of coefficients `a` and `b` should be written in the `.jl` file and the results are stored in text files.
+
+List of works done and future wishlist:
 - [x] Get coefficients up to 6th order (symbolic)
-- [ ] Solve the equations for `A`
-- [ ] Implement numerical code, predictor-corrector
-- [ ] Solve benchmark question
-- [ ] Discuss symmetric and asymmetric waves
-- [ ] Try higher orders
+- [x] Implement numerical code, predictor-corrector
+- [x] Solve benchmark question
+- [ ] Add horizontally forced sloshing
+- [ ] Try perturbation/finite difference
+- [ ] Extend work of Sobey (2009) to higher orders
+- [ ] Try problem with a baffle (bulkhead in oil tankers)
 
